@@ -21,15 +21,15 @@ class BookForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:5000/add-book", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
+      method: "POST",
+      headers: { "content-type": "application/json" },
       body: JSON.stringify({
         title: this.state.title,
         author: this.state.author,
         url: this.state.url,
         genre: this.state.genre,
         star_rating: this.state.star_rating,
-        book_read: this.state.book_read,
+        // book_read: this.state.book_read,
       }),
     })
       .then((res) => res.json())
