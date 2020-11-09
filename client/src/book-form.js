@@ -29,7 +29,7 @@ class BookForm extends Component {
         url: this.state.url,
         genre: this.state.genre,
         star_rating: this.state.star_rating,
-        // book_read: this.state.book_read,
+        book_read: this.state.book_read,
       }),
     })
       .then((res) => res.json())

@@ -1,8 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\Zac Invergo\\.virtualenvs\\zac-git-fix-me-T14QTzVJ\\Scripts\\python.exe",
-    "python.formatting.provider": "black",
-    "python.linting.pylintArgs": [
-        "--load-plugins",
-        "pylint-flask"
-    ]
-}
