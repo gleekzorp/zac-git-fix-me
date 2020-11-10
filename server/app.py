@@ -26,7 +26,8 @@ class Book(db.Model):
 
 class bookSchema(ma.Schema):
     class Meta:
-        fields = ("id", "title", "author", "url", "genre", "star_rating", "book_read")
+        fields = ("id", "title", "author", "url",
+                  "genre", "star_rating", "book_read")
 
 
 book_schema = bookSchema()
@@ -45,7 +46,7 @@ def add_book():
     star_rating = request.json["star_rating"]
     book_read = request.json["book_read"]
     new_book = Book(
-        titles=title,
+        title=title,
         author=author,
         url=url,
         genre=genre,
@@ -74,7 +75,7 @@ def get_books():
 @app.route("/book-read/<id>", methods=["PATCH"])
 def update_book(id):
     book = Book.query.get(id)
-    book.book_read = request.json["bookread"]
+    book.book_read = request.json["book_read"]
     db.session.commit()
     return jsonify(message="Book Updated")
 
