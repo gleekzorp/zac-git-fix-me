@@ -22,11 +22,9 @@
 
 > version updated to 0.2.0
 
-> Moved app.py from "server" directory to get it to connect to the Pipfile. All dependencies necessary installed. Had to update settings.json in .vscode for the "db" value to be read from SQLAlchemy, despite it being installed (May be my own issue). Changes include "load plugins" and "pylint"
+> Connected all Pipfile/json files to app.py
 
 > added .gitignore file, and marked .env, node_modules and "**pycache**" files to be ignored
-
-> moved src and public directories from "client" directory to main zac-git-fix-me directory, so npm can read the within them files
 
 > attached DOM element id "root" to index.js to compile on screen
 
