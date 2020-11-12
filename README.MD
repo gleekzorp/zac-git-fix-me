@@ -20,9 +20,11 @@
 
 # Zac's fixes
 
-> version updated to 0.2.0
+> version updated to 0.2.2
 
-> Connected all Pipfile/json files to app.py
+> Moved app.sqlite, package.json, Pipfile, .vscode and pycache to "server" directory
+
+> Moved package-lock.json, Pipfile.lock and .env to "client" directory
 
 > added .gitignore file, and marked .env, node_modules and "**pycache**" files to be ignored
 
@@ -31,3 +33,22 @@
 > in books-list.js, changed initial state of books from "null" to and empty array []
 
 > handleSubmit method in book-form "Add Book" attached with "DELETE" call which throws an error, replaced with "POST"
+
+> syntax errors in app.py
+
+    - (line 49) "titles" into "title"
+    - (line 78) "bookread" into "book_read"
+
+TO RUN SERVER:
+
+- In your terminal, cd into "server" directory and type "pipenv shell".
+
+- Then run python app.py. CTRL + click the link provided to open.
+
+> Added 6 books to the list via the server using POST (Implemented by hard-coding in POSTMAN)
+
+> Deleted 2 by id using DELETE. Made sure GET methods are running.
+
+    - Currently id 1, 4, 5, 6 populate the list
+    - id 1 edited to book_read: true
+    - POST, GET, PATCH, and DELETE all operational

@@ -8,6 +8,7 @@ flask = "*"
 flask-sqlalchemy = "*"
 flask-marshmallow = "*"
 flask-cors = "*"
+marshmallow-sqlalchemy = "*"
 
 [dev-packages]
 
