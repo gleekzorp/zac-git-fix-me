@@ -4,4 +4,12 @@ To start server:
 
 2. Enter pypi environment by typing "pipenv shell"
 
-3. Once successful, you can enter the server by running the file. In your terminal, type "python app.py"
+3. Enter a python repl by typing "python" in your terminal.
+
+4. Once you see ">>>" type "from app import db"
+
+5. Next command is "db.create_all()". If you don't get an error, you should get a new repl line back.
+
+6. Exit the repl with Ctrl/Cmd + Z
+
+7. Once successful, you can enter the server by running the file. In your terminal, type "python app.py"
