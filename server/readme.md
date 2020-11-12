@@ -5,13 +5,8 @@ To start server:
 2. Enter pypi environment by typing "pipenv shell"
 
    - please install all necessary dependencies.
-     - In your terminal, type "pipenv " then type the following (you can do this command all on one line):
-       - flask
-       - flask-marshmallow
-       - flask-sqlalchemy
-       - marshmallow-sqlalchemy
-       - flask-cors
-     - Press "Enter/Return" once all are listed to install all dependencies. Once the install is complete, proceed to the next step.
+     - In your terminal, type "pipenv install"
+     - Press "Enter/Return" to install all dependencies listed in Pipfile. Continue to the next step.
 
 3. Enter a python repl by typing "python" in your terminal.
 
