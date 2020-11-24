@@ -21,7 +21,7 @@ class BookForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:5000/add-book", {
-      method: "DELETE",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         title: this.state.title,
@@ -153,7 +153,7 @@ class BookForm extends Component {
               5 Star
             </label>
           </div>
-          <button type="submit">Add Book</button>
+          <button type="submit" onClick={this.handleSubmit}>Add Book</button>
           {this.state.errorText}
         </form>
       </div>
