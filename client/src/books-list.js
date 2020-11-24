@@ -5,7 +5,7 @@ export default class BooksList extends Component {
   constructor() {
     super();
     this.state = {
-      books: null,
+      books: [],
     };
   }
 
