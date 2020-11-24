@@ -19,7 +19,6 @@ export default class Book extends Component {
       .then((res) => res.json())
       .then((data) => {
         if (data.message === "Book Updated") {
-          console.log("hi");
           this.setState({ bookRead: !this.state.bookRead });
         }
       });
@@ -40,7 +39,7 @@ export default class Book extends Component {
           checked={this.state.bookRead}
           onChange={this.handleBookRead}
         />
-        <a href={url} target="_blank">
+        <a href={url} target="_blank" rel="noreferrer">
           Learn More {`>>`}
         </a>
       </div>
