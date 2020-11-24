@@ -121,18 +121,30 @@
         },
         "marshmallow-sqlalchemy": {
             "hashes": [
+<<<<<<< HEAD
                 "sha256:93f47b880ac7070f7b34c8ac0a71eeec3f8582a22e5c0330c1c436e3f5f99a37",
                 "sha256:d051cf013c075c43e1ee5c4b01f8fab6dd6b140dab6825be45875f674a0d289c"
             ],
             "index": "pypi",
             "version": "==0.24.1"
+=======
+                "sha256:098d4486374d0c63b4a947269c36d8850eedf35c59f172c5a1da28c070af64f4",
+                "sha256:cf0c7fead0b30ad66892a0cefcb39151591842ab16ca48ffa5bd816719b2491e"
+            ],
+            "index": "pypi",
+            "version": "==0.24.0"
+>>>>>>> 22e3efcc40034bdea3bc4e82d060fbb44375594e
         },
         "six": {
             "hashes": [
                 "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
                 "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
             ],
+<<<<<<< HEAD
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+=======
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+>>>>>>> 22e3efcc40034bdea3bc4e82d060fbb44375594e
             "version": "==1.15.0"
         },
         "sqlalchemy": {

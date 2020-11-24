@@ -19,7 +19,7 @@ export default class BooksList extends Component {
     // fetch("http://localhost:5000/books?order=desc")
     fetch("http://localhost:5000/books")
       .then((res) => res.json())
-      .then((data) => this.setState({books: data}));
+      .then((data) => this.setState({ books: data }));
   }
 
   render() {
